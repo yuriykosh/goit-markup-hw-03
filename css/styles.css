@@ -8,6 +8,18 @@
   --secondary-bg-color: #f5f4fa;
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 
@@ -16,17 +28,16 @@ body {
   color: var(--text-color);
 }
 
-/* --Header styles-- */
+/* ================= HEADER ================= */
 
 .header {
-  text-align: left;
-
   box-shadow: 0px 1px 0px #ececec;
 
   background-color: var(--bg-color);
 }
 
 /* Logo */
+
 .brand-logo {
   color: #000;
 
@@ -34,45 +45,38 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
 }
+
 .logo-accent-color {
   color: var(--accent-color);
 }
 
 /* Navigation Menu */
-.nav-menu-list {
-  list-style-type: none;
-  text-align: left;
-}
 
-.nav-menu-link {
+.menu-link {
   color: var(--text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
-.nav-menu-link:visited {
+
+.menu-link:visited {
   color: var(--text-color);
 }
-.nav-menu-link:hover,
-.nav-menu-link:focus {
+
+.menu-link:hover,
+.menu-link:focus {
   color: var(--accent-color);
 }
 
 /* Contacts links */
-.header-contacts-list {
-  list-style-type: none;
-}
 .header-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .header-contacts-link:link,
 .header-contacts-link:visited {
@@ -83,7 +87,7 @@ body {
   color: var(--accent-color);
 }
 
-/* --Footer styles-- */
+/* ================= FOOTER ================= */
 
 .footer {
   background-color: var(--dark-bg-color);
@@ -96,11 +100,6 @@ body {
 }
 
 /* Address */
-.address-list {
-  list-style-type: none;
-  display: inline-block;
-  text-align: left;
-}
 
 .address-link {
   color: rgba(255, 255, 255, 0.6);
@@ -108,22 +107,18 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.2;
-  /* or 171% */
-  text-decoration: none;
 }
 
 .location-link {
   color: var(--white-color);
 }
 
-/* --Index page styles-- */
+/* ================= INDEX PAGE ================= */
 
-/* Hero section */
+/* --- HERO SECTION --- */
 
-.section-hero {
+.hero {
   background-color: var(--dark-bg-color);
-
-  text-align: center;
 }
 
 .hero-title {
@@ -134,15 +129,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  /* or 136% */
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
-  margin-top: 30px;
-
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -152,33 +143,17 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  /* identical to box height, or 188% */
   letter-spacing: 0.06em;
-  text-align: center;
-}
-.hero-button:hover {
-  cursor: pointer;
 }
 
-/* "Наші переваги" section */
+/* --- "НАШІ ПЕРЕВАГИ" SECTION --- */
 
-.section-features {
+.features {
   background-color: var(--bg-color);
-
-  text-align: center;
 }
 
 .features-title {
   visibility: hidden;
-}
-
-.features-list {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-
-  text-align: left;
-  list-style-type: none;
 }
 
 .features-item-title {
@@ -193,62 +168,30 @@ body {
 
   font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
 }
 
-/* "Чим ми займаємося" section */
+/* --- "ЧИМ МИ ЗАЙМАЄМОСЯ" SECTION --- */
 
 .section-about {
   background-color: var(--bg-color);
-
-  text-align: center;
 }
 
 .about-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-
-  text-align: center;
 }
 
-.about-list {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
+/* --- "НАША КОМАНДА" SECTION --- */
 
-  text-align: left;
-  list-style-type: none;
-}
-
-.about-item-image {
-  height: 294px;
-  width: 370px;
-}
-
-/* "Наша команда" section */
-
-.section-team {
+.team {
   background-color: var(--secondary-bg-color);
-
-  text-align: center;
 }
 
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-
-  text-align: center;
-}
-
-.team-list {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-
-  text-align: left;
-  list-style-type: none;
 }
 
 .team-card {
@@ -257,21 +200,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  text-align: center;
-}
-
-.team-card-image {
-  width: 270px;
 }
 
 .team-card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  /* identical to box height */
-
-  text-align: center;
 }
 
 .team-card-text {
@@ -279,39 +213,21 @@ body {
 
   font-size: 16px;
   line-height: 1.2;
-  /* identical to box height */
-  text-align: center;
 }
 
-/* --Portfolio page styles-- */
+/* ================= PORTFOLIO PAGE ================= */
 
-/* Portfolio section */
+/* --- PORTFOLIO SECTION --- */
 
-.section-portfolio {
+.portfolio {
   background-color: var(--bg-color);
-
-  text-align: center;
 }
 
 .portfolio-title {
   visibility: hidden;
 }
 
-.portfolio-filter-list {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-
-  text-align: left;
-  list-style-type: none;
-}
-
-.portfolio-filter-item {
-  text-align: center;
-}
-
 .portfolio-filter-button {
-  height: 38px;
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
@@ -324,41 +240,17 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  /* identical to box height, or 162% */
-  text-align: center;
 }
 
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-
-  cursor: pointer;
-}
-
-.portfolio-list {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-
-  text-align: left;
-  list-style-type: none;
 }
 
 .portfolio-item {
   background-color: var(--bg-color);
   border: 1px solid #eeeeee;
-
-  text-align: left;
-}
-
-.portfolio-link {
-  text-decoration: none;
-}
-
-.portfolio-link-image {
-  width: 370px;
-  height: 294px;
 }
 
 .portfolio-link-title {
@@ -372,7 +264,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
 }
 
@@ -386,5 +277,4 @@ body {
 
   font-size: 16px;
   line-height: 1.9;
-  /* identical to box height, or 188% */
 }
