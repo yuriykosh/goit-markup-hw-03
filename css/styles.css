@@ -239,6 +239,10 @@ body {
   background-color: var(--bg-color);
 }
 
+.features.section {
+  padding-bottom: 47px;
+}
+
 /* heading */
 
 .features-title {
@@ -286,7 +290,7 @@ body {
 }
 
 .about.section {
-  padding-top: 0;
+  padding-top: 47px;
 }
 
 /* heading */
