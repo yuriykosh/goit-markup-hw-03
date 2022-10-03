@@ -24,6 +24,12 @@
   cursor: pointer;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -166,8 +172,8 @@ body {
   font-style: normal;
 }
 
-.address-item {
-  margin-bottom: 9px;
+.address-item:not(:last-child) {
+  margin-right: 9px;
 }
 
 .address-link {
@@ -191,10 +197,7 @@ body {
   text-align: center;
 }
 
-.hero.section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+/* heading */
 
 .hero-title {
   margin-top: 0;
@@ -211,6 +214,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* button */
 
 .hero-button {
   padding: 10px 32px;
@@ -234,9 +239,16 @@ body {
   background-color: var(--bg-color);
 }
 
+/* heading */
+
 .features-title {
-  display: none;
+  visibility: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 0;
 }
+
+/* content */
 
 .features-list {
   display: flex;
@@ -273,6 +285,8 @@ body {
   background-color: var(--bg-color);
 }
 
+/* heading */
+
 .about-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -283,13 +297,11 @@ body {
   text-align: center;
 }
 
+/* content */
+
 .about-list {
   display: flex;
   justify-content: space-between;
-}
-
-.about-item-image {
-  display: block;
 }
 
 /* --- "НАША КОМАНДА" SECTION --- */
@@ -300,6 +312,8 @@ body {
   text-align: center;
 }
 
+/* heading */
+
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -308,6 +322,8 @@ body {
   font-size: 36px;
   line-height: 1.2;
 }
+
+/* content */
 
 .team-list {
   display: flex;
@@ -328,12 +344,8 @@ body {
   margin-right: 30px;
 }
 
-.portfolio-item:not(:nth-last-child(-n + 4)) {
+.team-card:not(:nth-last-child(-n + 4)) {
   margin-bottom: 30px;
-}
-
-.team-card-image {
-  display: block;
 }
 
 .team-card-description {
@@ -368,9 +380,16 @@ body {
   background-color: var(--bg-color);
 }
 
+/* heading */
+
 .portfolio-title {
-  display: none;
+  visibility: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 0;
 }
+
+/* filter navigation */
 
 .portfolio-filter-list {
   display: flex;
@@ -405,6 +424,8 @@ body {
   color: var(--white-color);
 }
 
+/* content */
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -424,19 +445,16 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-link-image {
-  display: block;
-}
-
 .portfolio-link-description {
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-link-title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 
   color: var(--text-color);
 
