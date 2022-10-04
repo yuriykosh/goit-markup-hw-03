@@ -173,7 +173,7 @@ body {
 }
 
 .address-item:not(:last-child) {
-  margin-right: 9px;
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -192,6 +192,9 @@ body {
 /* --- HERO SECTION --- */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--dark-bg-color);
 
   text-align: center;
@@ -239,10 +242,6 @@ body {
   background-color: var(--bg-color);
 }
 
-.features.section {
-  padding-bottom: 47px;
-}
-
 /* heading */
 
 .features-title {
@@ -286,11 +285,9 @@ body {
 /* --- "ЧИМ МИ ЗАЙМАЄМОСЯ" SECTION --- */
 
 .about {
-  background-color: var(--bg-color);
-}
+  padding-top: 0;
 
-.about.section {
-  padding-top: 47px;
+  background-color: var(--bg-color);
 }
 
 /* heading */
